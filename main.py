@@ -14,6 +14,7 @@ def mostrar_menu_listas():
     print("3. Eliminar dato")
     print("4. Mostrar lista")
     print("5. Volver al menú principal")
+    
 
 def operaciones_listas():
     lista = ListaSimple()
