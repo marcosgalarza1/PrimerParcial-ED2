@@ -28,11 +28,11 @@ class Pila:
     
     def desapilar(self):
         if self.esta_vacia():
-            raise IndexError("No se puede desapilar, la pila está vacía.")
-        valor = self.cima.valor
+            raise Exception("No se puede desapilar de una pila vacia")
+        valor_desapilado = self.cima.valor
         self.cima = self.cima.siguiente
         self.longitud -= 1
-        return valor
+        return valor_desapilado
 
 
 
