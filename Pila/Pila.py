@@ -22,15 +22,11 @@ class Pila:
     # Desapila el elemento en la cima de la pila y lo devuelve.
     # Si la pila está vacía, lanza una excepción.
     ######################################################
-
-
-
-
-
-
-
-
-
+    def desapilar(self):
+        self.longitud -= 1
+        nodo = self.cima
+        self.cima = self.cima.siguiente
+        return nodo
 
 ########################################################################
     def ver_cima(self):

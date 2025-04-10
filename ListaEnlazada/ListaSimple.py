@@ -22,14 +22,16 @@ class ListaSimple:
 
 ############PREGUNTA 1: Método insertar_final ###########
     # Método para insertar un nodo al final de la lista
-
-
-
-
-
-
-
-
+    def insertar_final(self, valor):
+        self.longitud += 1
+        nuevo_nodo = Nodo(valor)
+        if self.esta_vacia():
+            self.cabeza = nuevo_nodo
+            return
+        nodo = self.cabeza
+        while nodo.siguiente:
+            nodo = nodo.siguiente
+        nodo.siguiente = nuevo_nodo
 
 ########################################################
     def eliminar_inicio(self):
